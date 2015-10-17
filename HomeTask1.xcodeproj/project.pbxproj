@@ -14,6 +14,9 @@
 		4D4AADD81BD1792000312BD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4AADD71BD1792000312BD7 /* Images.xcassets */; };
 		4D4AADDB1BD1792000312BD7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4AADD91BD1792000312BD7 /* LaunchScreen.xib */; };
 		4D4AADE71BD1792000312BD7 /* HomeTask1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AADE61BD1792000312BD7 /* HomeTask1Tests.m */; };
+		4D4AADF41BD1811B00312BD7 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AADF31BD1811B00312BD7 /* MyViewController.m */; };
+		4D4AADFB1BD1863F00312BD7 /* ViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AADFA1BD1863F00312BD7 /* ViewGenerator.m */; };
+		4D4AAE001BD28BD600312BD7 /* HistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AADFF1BD28BD600312BD7 /* HistoryManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		4D4AADE01BD1792000312BD7 /* HomeTask1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTask1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4AADE51BD1792000312BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D4AADE61BD1792000312BD7 /* HomeTask1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTask1Tests.m; sourceTree = "<group>"; };
+		4D4AADF21BD1811B00312BD7 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		4D4AADF31BD1811B00312BD7 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		4D4AADF91BD1863F00312BD7 /* ViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewGenerator.h; sourceTree = "<group>"; };
+		4D4AADFA1BD1863F00312BD7 /* ViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewGenerator.m; sourceTree = "<group>"; };
+		4D4AADFE1BD28BD600312BD7 /* HistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryManager.h; sourceTree = "<group>"; };
+		4D4AADFF1BD28BD600312BD7 /* HistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +72,9 @@
 		4D4AADBE1BD1791F00312BD7 = {
 			isa = PBXGroup;
 			children = (
-				4D4AADC91BD1792000312BD7 /* HomeTask1 */,
 				4D4AADE31BD1792000312BD7 /* HomeTask1Tests */,
 				4D4AADC81BD1792000312BD7 /* Products */,
+				4D4AADC91BD1792000312BD7 /* HomeTask1 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +90,10 @@
 		4D4AADC91BD1792000312BD7 /* HomeTask1 */ = {
 			isa = PBXGroup;
 			children = (
-				4D4AADCE1BD1792000312BD7 /* AppDelegate.h */,
-				4D4AADCF1BD1792000312BD7 /* AppDelegate.m */,
-				4D4AADD11BD1792000312BD7 /* ViewController.h */,
-				4D4AADD21BD1792000312BD7 /* ViewController.m */,
+				4D4AADF51BD1811F00312BD7 /* MyViewController */,
+				4D4AADF61BD185BE00312BD7 /* Logic */,
+				4D4AADF11BD180AA00312BD7 /* AppDelegate */,
+				4D4AADF01BD1809E00312BD7 /* ViewController */,
 				4D4AADD41BD1792000312BD7 /* Main.storyboard */,
 				4D4AADD71BD1792000312BD7 /* Images.xcassets */,
 				4D4AADD91BD1792000312BD7 /* LaunchScreen.xib */,
@@ -117,6 +126,44 @@
 				4D4AADE51BD1792000312BD7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D4AADF01BD1809E00312BD7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D4AADD11BD1792000312BD7 /* ViewController.h */,
+				4D4AADD21BD1792000312BD7 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4D4AADF11BD180AA00312BD7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4D4AADCE1BD1792000312BD7 /* AppDelegate.h */,
+				4D4AADCF1BD1792000312BD7 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4D4AADF51BD1811F00312BD7 /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D4AADF31BD1811B00312BD7 /* MyViewController.m */,
+				4D4AADF21BD1811B00312BD7 /* MyViewController.h */,
+			);
+			name = MyViewController;
+			sourceTree = "<group>";
+		};
+		4D4AADF61BD185BE00312BD7 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				4D4AADFE1BD28BD600312BD7 /* HistoryManager.h */,
+				4D4AADFF1BD28BD600312BD7 /* HistoryManager.m */,
+				4D4AADF91BD1863F00312BD7 /* ViewGenerator.h */,
+				4D4AADFA1BD1863F00312BD7 /* ViewGenerator.m */,
+			);
+			name = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +215,7 @@
 				TargetAttributes = {
 					4D4AADC61BD1792000312BD7 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7HU7X48Z3J;
 					};
 					4D4AADDF1BD1792000312BD7 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -219,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4AADFB1BD1863F00312BD7 /* ViewGenerator.m in Sources */,
 				4D4AADD31BD1792000312BD7 /* ViewController.m in Sources */,
+				4D4AAE001BD28BD600312BD7 /* HistoryManager.m in Sources */,
 				4D4AADD01BD1792000312BD7 /* AppDelegate.m in Sources */,
+				4D4AADF41BD1811B00312BD7 /* MyViewController.m in Sources */,
 				4D4AADCD1BD1792000312BD7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ramik Abadull (E5QRXSDYR8)";
 				INFOPLIST_FILE = HomeTask1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ramik Abadull (E5QRXSDYR8)";
 				INFOPLIST_FILE = HomeTask1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +471,7 @@
 				4D4AADEC1BD1792000312BD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D4AADED1BD1792000312BD7 /* Build configuration list for PBXNativeTarget "HomeTask1Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +480,7 @@
 				4D4AADEF1BD1792000312BD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
