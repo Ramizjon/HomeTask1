@@ -16,7 +16,7 @@ static HistoryManager *instance = nil;
 {
     self = [super init];
     if (self = [super init]) {
-       viewsQueue =  [[NSMutableArray alloc] init];
+       viewsQueue =  [[NSMutableArray alloc] init]; // allocating memory and initializing a variable viewsQueue
     }
     return self;
 }
